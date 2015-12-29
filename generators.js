@@ -98,3 +98,13 @@ function first(seq) {
 // for(let i of take(40, cycle([3, 1, 2]))) {
 //     console.log(i);
 // }
+
+// List comprehensions
+
+[for (i of range(1, 100)) i * i];
+
+// Sum of all numbers divisble by 3 or 5 less than 1000
+[for (i of range(1, 1000)) i]
+    .filter((a) => (a%3 == 0) || (a%5 == 0))
+    .map((a) => a * a )
+    .reduce((a, b) => a + b);

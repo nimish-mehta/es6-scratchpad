@@ -29,4 +29,6 @@ var obj = new ExampleClass();
 console.log(obj.attr);
 console.log(obj.num);
 console.log(obj.dynamicAttr);
+// still exists
+console.log(obj._num);
 console.log(ExampleClass.saySomething());
